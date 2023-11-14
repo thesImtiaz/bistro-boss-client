@@ -10,5 +10,14 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require("@designbycode/tailwindcss-text-shadow")
+    ({
+      shadowColor: "rgba(0, 0, 0, 0.5)",
+      shadowBlur: "0px",
+      shadowOffsetX: "2px",
+      shadowOffsetY: "2px",
+    }),
+  ],
 };
